@@ -1,0 +1,84 @@
+<html>
+<script>
+
+/*random notes before class*/
+
+// double-equals (loosely equl to)(coercively equal to)
+
+    //the code below is considering truthy and falsy
+
+    // <input type="text" />
+
+    input.value; // '3'
+
+    if (input.value == 3){ //the condition will make convert contents to numbers for this operator
+    }
+
+    if('str'){
+    }
+
+    if([]){
+        // it runs
+    }
+
+    42 == '42' //true;
+
+    -42 == 42 //false;
+
+    42 == true; //false; double-equals does not evaluate truthy and falsy
+
+    [] == ''; //true
+
+        //Step 1: check types
+        // - array (object) vs string
+        // Are they the same? No
+
+        //Step 2: convert object to string
+        // - [].toString() == ''
+
+        //Step 3: check types (again)
+        // - string vs string
+        // Are the same? yes!
+
+        //Step 4: comopare value
+        // - nocharacters == nocharacters
+        // Are they the same? Yes!
+        // Evaluates to "true"
+
+// triple-equals (exactly equal to)
+
+    [] === '';
+
+        //Step 1: check types
+        // - Array (object) vs. string
+        // Are they the same? No
+        // Evaluates "false"
+
+// typeof operator
+
+    typeof null // object, an exception to the rule-- a bug in javascript
+
+    typeof undefined // undefined
+
+    typeof number // undefined
+
+    typeof 5 // number
+
+    typeof '' // string
+
+    typeof {} // object
+
+    typeof (() => {}) // function
+
+    typeof [] // object
+
+    Array.isArry([]) // true
+
+    typeof NaN // number, not a number really should be "invalid number"
+
+    'not a number' * 5 // NaN
+
+
+
+</script>
+</html>

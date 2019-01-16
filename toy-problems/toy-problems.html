@@ -1,0 +1,49 @@
+<html>
+<script>
+
+/* Toy Problem 1/10/2019 - Write a program that finds the summation of every number from 1 to num. 
+The number will always be a positive integer greater than 0. */
+
+    function sumAllNumbers (num){
+        var begin = 0;
+        for(let i = 1; i <= num; i++){
+            begin += i;
+        }
+        return begin;
+    };
+
+    /* How the teacher did it */
+
+    //Step one - clarify
+        // Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+
+    //Step two - Sample data and solve without coding
+        // 1--->55
+        // 3--->6
+
+    //Step three - Define data structures
+        //function
+        //for loop
+        //+=
+
+    //Step four - Write pseudo code
+        //write a function called summation
+        //function takes in a param
+        //define a variable and set it to 0
+        //write a for loop iterating as many times as the param
+        //for each iteration, reassign the variable (initially set to 0) to i
+        //return the variable
+
+    //Step five - Solve
+    function summation (param){
+        let variable = 0;
+        for(let i = 0; i <= param; i++){
+            variable += i;
+        }
+        return variable;
+    };
+
+
+</script>
+</html>
+
