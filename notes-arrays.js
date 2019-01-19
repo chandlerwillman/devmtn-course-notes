@@ -17,11 +17,11 @@ list.splice(1); //removes items starting at index 1
 list.splice(1,2); //removes 2 items starting at 1
 list.splice(1,2,3); //removes 2 items starting at 1 and slips in 3
 
-list.pop(); //**investigate 
+list.pop(); //removing items from the end of the array
 
 list.push(1,2,3,4); //adding items to the end of the array, returns the new length of the array
 
-list.shift(); //**investigate 
+list.shift(); //shifts thhe elements of the array forward, removing all elements before the number passed in (?)
 
 list.unshift(); //adds to the front of the array, returns the new length
 

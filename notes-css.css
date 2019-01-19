@@ -1,0 +1,50 @@
+/* element selector */
+
+p {
+    key: value;
+}
+
+/* class selector */
+
+.class-1 {
+    outline: 2px solid hotpink;
+}
+
+/* id selector */
+
+#my-id {
+    outline: 2px solid forestgreen;
+    height: 3em;
+}
+
+/* pseudo element */
+#my-id::before {
+    content: "before";
+}
+#my-id::after {
+    content: "after";
+}
+
+/* pseudo class */
+button:hover {
+    cursor: pointer;
+    outline: 3px solid brown;
+}
+
+input:focus {
+    outline: 2px solid red;
+}
+
+:link {
+    color: goldenrod;
+}
+
+:visited {
+    color: gray;
+}
+
+/* attribute selectors */
+
+[type] {
+    font-size: 1.5em;
+}
