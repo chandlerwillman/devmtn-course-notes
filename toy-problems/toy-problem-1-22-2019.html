@@ -10,6 +10,7 @@
     //[-10, undefined, NaN, 25, 'Hello World'] ==> [-10, 25, 'Hello World']
     //[true, false, null, 'Hello World', 12] ==> [true, 'Hello World', 12]
 
+    //option 1 - works
     function falseFinder(arr){
         var truthyArr = [];
         for(let i = 0; i < arr.length; i++){
@@ -22,9 +23,10 @@
 
     console.log(falseFinder([-10, undefined, NaN, 25, 'Hello World']));
 
-    
-
-
+    //option 2 - works
+    function truthy(arr){
+        return arr.filter(Boolean);
+    };
 
 
 </script>
