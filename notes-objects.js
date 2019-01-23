@@ -166,3 +166,59 @@
         var bob = new Person('bob'); // creates a new person object named bob, need to use 'new' to call it
 
         bob.sayName(); //logs out to developer console since the function is available in the class
+
+/* notes from pre-class reading - 1/19/2019 */
+
+    //delete operator
+    var backpack = {
+        oldHomework: "Math",
+        item: "Pencil",
+    };
+
+    delete backpack.oldHomework; //returns backpack {item: "Pencil"}, deletes object properties and their values
+
+    //Object.assign
+    var ind = {
+        name: 'Joseph'
+    };
+
+    var ind2 = Object.assign({},ind); //creates copy of the ind object and assigns it to a unique object variable
+
+        // Object.assign: a method that copies all properties and values from source objects to a target object
+        // First argument ie. {}: the target object. This will be returned to the function
+        // Second+ argument(s) ie. ind: the source object(s). The properties from this object will be copies to the target
+
+    
+    //For In Loops
+    var favorites = {
+        color: 'red',
+        flavor: 'vanilla'
+    };
+
+    for (var prop in favorites){
+        console.log(favorites[prop]);
+    }
+
+    //Classes
+    class Burger {  //javascript classes are syntactical sugar for writing constructor functions and adding methods to the prototype
+        constructor(layers){  //the the constructor function taks in parameters and assigns properties as usual
+            this.layers = layers;
+            this.percentLeft = 100;
+        }
+
+        eat(){  //outside the constructor function define any methods you want to add to the prototype
+            this.percentLeft --;
+        }
+    }
+
+    var tripleBigBoy = new Burger(3);  //create new instances the same way you would with a constructor function
+    /*
+    tripleBigBoy = {
+        layers: 3,
+        percentLeft: 100,
+        eat(){
+            tripleBigBoy.percentLeft --;
+        }
+    };
+    */
+
