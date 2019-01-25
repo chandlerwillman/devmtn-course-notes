@@ -1,0 +1,41 @@
+<html>
+<script>
+
+
+/* Toy Problem 1/24/2019
+Write a function called `findTheOutlier` that will accept an array of numbers
+that are all odd or even with one number being the opposite.
+    ex) [2,4,6,8,11] or [3,5,7,9,10]. 
+This function will find the number the opposite number type and return it
+*/
+
+    //my attempt
+    function findTheOutlier(arr){
+        let evensArr = arr.filter((val) => val%2 == 0);
+        let oddsArr = arr.filter((val) => val%2 == 1);
+        if(evensArr.length > oddsArr.length){
+            return oddsArr[0];
+        }else{
+            return evensArr[0];
+        };
+    }
+
+    //mentor's attempt
+    function findTheOutlier2(arr){
+        let evens = [];
+        let odds = [];
+        for(let i = 0; i < arr.length; i++){
+            if(arr[i]%2 === 0){
+                evens.push(arr[i]);
+            }else{
+                odds.push(arr[i]);
+            };
+        }
+        
+    }
+
+console.log(findTheOutlier([3,5,7,9,10]));
+
+
+</script>
+</html>
