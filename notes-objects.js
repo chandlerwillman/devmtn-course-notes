@@ -129,7 +129,7 @@
         class Person { //allows you to create objects multiple times
             //name = '';
 
-            constructor(nane) {  //constructor makes a new object *investiage
+            constructor(name) {  //constructor makes a new object *investiage
                 // var this = {}
                 // adds prototype to that object
                 //runs code in constructor
